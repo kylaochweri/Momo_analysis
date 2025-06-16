@@ -56,6 +56,7 @@ How to Run the System :
 When it’s done, you open the Database/momo.db file with a tool like DB Browser for SQLite to see your transactions.
 
 video link : https://www.awesomescreenshot.com/video/41024162
+Summative Report :https://docs.google.com/document/d/1Tutie5QXrz96GwMzCEbssANKIWGMtv0-FG3jfbM2rfk/edit?tab=t.0#heading=h.38onzmn50cpv
 
 AUTHORS
 
