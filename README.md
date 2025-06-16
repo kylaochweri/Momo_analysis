@@ -61,7 +61,7 @@ Summative Report :https://docs.google.com/document/d/1Tutie5QXrz96GwMzCEbssANKIW
 AUTHORS
 
 1.Mukeshimana Josiane
-
-2.Ntwali Ishimwe Christian
-3.Prudence Tracey Browns
+2 Kyla Ochweri
+3.Ntwali Ishimwe Christian
+4.Prudence Tracey Browns
 
