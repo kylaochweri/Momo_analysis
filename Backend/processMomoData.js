@@ -108,4 +108,5 @@ xml2js.parseString(xml, (err, result) => {
   console.log(`✅ Done. Inserted messages into DB.`);
   console.log(`⚠️ Ignored messages: ${ignored.length}`);
 
-  
+  db.close();
+});
