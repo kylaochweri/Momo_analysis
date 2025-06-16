@@ -47,5 +47,6 @@ When it’s done, you open the Database/momo.db file with a tool like DB Browser
 AUTHORS
 
 1.Mukeshimana Josiane
+
 2.Ntwali Ishimwe Christian
 
