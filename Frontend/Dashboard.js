@@ -121,19 +121,3 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    // Line Chart
-    new Chart(document.getElementById("lineChart"), {
-      type: "line",
-      data: {
-        labels: Object.keys(monthlySums),
-        datasets: [{
-          label: "Monthly Trend",
-          data: Object.values(monthlySums),
-          borderColor: "#10b981",
-          fill: false,
-          tension: 0.3
-        }]
-      }
-    });
-  }
-});
