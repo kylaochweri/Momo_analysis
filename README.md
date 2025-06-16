@@ -27,11 +27,22 @@ Technologies Used :
   3.XML2JS, a Node.js library that converts the XML SMS file into a format the program can read
 
 Project Structure:
-
-  1.Backend/ — This folder has the main script (processMomoData.js) that does all the work
-  2.Database/ — Contains the database file (momo.db) and optionally a schema file
-  3.ignored.log — Logs messages that couldn’t be processed
-  4.modified_sms_v2.xml — The input XML file with the SMS messages
+momo-analysis/
+├── Backend/
+│ ├── processMomoData.js # Parses XML & inserts transactions into SQLite
+│ ├── Server.js # Node.js server that exposes API endpoints
+│ ├── modified_sms_v2.xml # SMS backup file in XML format
+│ ├── ignored.log # Messages that didn't match known patterns
+│ └── tempCodeRunnerFile.js # Temporary file (optional)
+├── Database/
+│ ├── momo.db # SQLite database file
+│ └── Schema.sql # SQL schema for the transactions table
+├── Frontend/
+│ ├── Index.html # Web-based dashboard UI
+│ ├── Dashboard.js # Frontend logic to fetch & render transactions
+│ └── style.css # Basic styles for the dashboard
+├── package.json # Project dependencies
+├── package-lock.json # Lock file for consistent installations
 
 How to Run the System :
 
@@ -43,6 +54,8 @@ How to Run the System :
       .node Backend/processMomoData.js
 
 When it’s done, you open the Database/momo.db file with a tool like DB Browser for SQLite to see your transactions.
+
+video link : https://www.awesomescreenshot.com/video/41024162
 
 AUTHORS
 
