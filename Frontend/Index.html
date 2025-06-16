@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MTN MoMo SMS Analytics Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+<body class="container">
+
+  <header class="header">
+    <h1>MTN MoMo SMS Analytics Dashboard</h1>
+    <p>Enterprise-level SMS Transaction Analysis & Visualization</p>
+  </header>
+
+  <section class="upload-section">
+    <h2>Upload SMS Data</h2>
+    <p>Upload your XML file containing SMS transaction data for analysis</p>
+    <div class="upload-box">
+      <i class="material-icons">upgrade</i>
+      <p>Upload SMS XML Data</p>
+      <!-- Added file input and button -->
+      <input type="file" id="fileInput" accept=".xml" style="display:none" />
+      <button id="uploadBtn">Choose XML File</button>
+      <p class="note">Supports XML files up to 10MB</p>
+    </div>
+    <div class="sample-note">
+      Sample Data Available — The dashboard is pre-loaded with sample MTN MoMo SMS data to demonstrate all features.
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="card blue">
+      <p>Total Transactions</p>
+      <h3>30</h3>
+      <span>16 with amount data</span>
+    </div>
+    <div class="card green">
+      <p>Total Volume</p>
+      <h3>8,000 RWF</h3>
+      <span>Avg: 500 RWF</span>
+    </div>
+    <div class="card purple">
+      <p>Top Category</p>
+      <h3>Incoming Money</h3>
+      <span>7 transactions</span>
+    </div>
+    <div class="card orange">
+      <p>Categories</p>
+      <h3>8</h3>
+      <span>Transaction types identified</span>
+    </div>
+  </section>
+
+  <section class="filters">
+    <label><i class="material-icons">filter_alt</i> Data Filters & Search</label>
+    <div class="filter-controls">
+      <input type="text" placeholder="Search transactions..." />
+      <select>
+        <option>All Categories</option>
+        <option>Transaction values</option>
+        <option>Category A</option>
+        <option>Category B</option>
+      </select>
+    </div>
+  </section>
+
+  <section class="charts">
+    <div class="chart-box">
+      <h2><i class="material-icons">pie_chart_outline</i> Transaction Distribution</h2>
+      <canvas id="pieChart"></canvas>
+    </div>
+    <div class="chart-box">
+      <h2><i class="material-icons">analytics</i> Transaction Volume</h2>
+      <canvas id="barChart"></canvas>
+    </div>
+  </section>
+
+  <section class="chart-full">
+    <h2><i class="material-icons">trending_up</i> Monthly Transaction Trends</h2>
+    <canvas id="lineChart"></canvas>
+  </section>
+
+  <section class="transactions">
+    <h2>Transaction Details</h2>
+    <p>Showing 0 transactions</p>
+    <!-- Transaction entries will be dynamically added here -->
+  </section>
+
+  <script src="Dashboard.js"></script>
+</body>
+</html>

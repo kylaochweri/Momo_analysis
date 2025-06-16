@@ -1,0 +1,275 @@
+/* Reset some basics */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body.container {
+  max-width: 960px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+  background-color: #f9fafb;
+  color: #333;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.header h1 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: #111827;
+}
+.header p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+/* Upload section */
+.upload-section {
+  background: #e0f2fe;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #0369a1;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.05);
+}
+.upload-box {
+  border: 2px dashed #0369a1;
+  border-radius: 0.5rem;
+  padding: 1.5rem 1rem;
+  cursor: pointer;
+  display: inline-block;
+  min-width: 280px;
+  transition: background-color 0.3s ease;
+}
+.upload-box:hover {
+  background-color: #bae6fd;
+}
+.upload-box i.material-icons {
+  font-size: 48px;
+  margin-bottom: 0.5rem;
+}
+.upload-box p {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+.note {
+  font-size: 0.85rem;
+  color: #0c4a6e;
+}
+.sample-note {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  color: #475569;
+  font-style: italic;
+}
+
+/* Stats cards */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.card {
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+  color: white;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+}
+.card p {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.card h3 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin: 0.3rem 0 0.5rem 0;
+}
+.card span {
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+.card.blue {
+  background-color: #3b82f6;
+}
+.card.green {
+  background-color: #10b981;
+}
+.card.purple {
+  background-color: #8b5cf6;
+}
+.card.orange {
+  background-color: #f97316;
+}
+
+/* Filters */
+.filters {
+  margin-bottom: 2rem;
+}
+.filters label {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #334155;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.filters label i.material-icons {
+  margin-right: 0.4rem;
+}
+.filter-controls {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.filter-controls input[type="text"],
+.filter-controls select {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  color: #334155;
+}
+.filter-controls input[type="text"]:focus,
+.filter-controls select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 3px #3b82f6;
+}
+
+/* Charts */
+.charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.chart-box {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+}
+.chart-box h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #334155;
+  font-size: 1.1rem;
+}
+.chart-box h2 i.material-icons {
+  font-size: 1.4rem;
+  color: #3b82f6;
+}
+
+.chart-full {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+  margin-bottom: 3rem;
+}
+.chart-full h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #334155;
+  font-size: 1.1rem;
+}
+.chart-full h2 i.material-icons {
+  font-size: 1.4rem;
+  color: #10b981;
+}
+
+/* Transactions */
+.transactions {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.08);
+  margin-bottom: 3rem;
+}
+.transactions h2 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #334155;
+}
+.transactions p {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 1rem;
+}
+.transaction {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+.transaction:last-child {
+  border-bottom: none;
+}
+.transaction .meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+.tag {
+  padding: 0.15rem 0.5rem;
+  border-radius: 0.25rem;
+  color: white;
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+.tag.green {
+  background-color: #10b981;
+}
+.tag.blue {
+  background-color: #3b82f6;
+}
+.tag.yellow {
+  background-color: #facc15;
+}
+.transaction p {
+  font-size: 0.95rem;
+  color: #475569;
+}
+.transaction strong.amount {
+  display: block;
+  margin-top: 0.2rem;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+/* Buttons */
+button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.25s ease;
+}
+button:hover {
+  background-color: #2563eb;
+}
